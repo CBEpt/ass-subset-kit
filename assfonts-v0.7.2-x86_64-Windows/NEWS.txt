@@ -1,0 +1,285 @@
+Overview of changes leading to v0.7.2
+Saturday, August 17, 2024
+====================================
+- fix GUI bug: no title bar in Wayland with mesa 24.0+
+
+
+Overview of changes leading to v0.7.1
+Sunday, June 23, 2024
+====================================
+- add GUI Linux wayland support
+
+
+Overview of changes leading to v0.7.0
+Monday, May 6, 2024
+====================================
+- fix bug: failed to load some traditional chinese fonts
+- Qt version update to 6.6
+- new pre-build releases: linux-armhf, linux-i686, windows-i686
+- use VCPKG as C/C++ dependency manager
+
+
+Overview of changes leading to v0.6.3
+Saturday, Wednesday 30, 2024
+====================================
+- fix logger bug: crash when print curly brackets
+
+
+Overview of changes leading to v0.6.2
+Saturday, January 27, 2024
+====================================
+- add new experimental feature: font combined
+- add new GUI feature: Reset all
+- fix bug: cannot show last log messages
+
+
+Overview of changes leading to v0.6.1
+Thursday, December 7, 2023
+====================================
+- fix bug: crash when recolorizing
+- fix bug: crash when recognize invalid font
+
+
+Overview of changes leading to v0.6.0
+Friday, November 10, 2023
+====================================
+- refactor new function: Subfonts Rename
+
+
+Overview of changes leading to v0.5.5
+Saturday, October 21, 2023
+====================================
+- set 1 second timeout when fetching DownloadLink
+- fix bug when trimming all-blank string_view
+- use basic string find and replace instead of regex in fontname renaming
+
+
+Overview of changes leading to v0.5.4
+Thursday, September 21, 2023
+====================================
+- Fix ASS subtitle parsing bug
+- Support multiple font directories
+- Add default system font directory when building font database
+- fix font parsing bug: fontname contains "\u0000"
+
+
+Overview of changes leading to v0.5.3
+Sunday, September 3, 2023
+====================================
+- Add new feature: multi thread
+- Add manpage document
+- Add copyright files in release package
+- Improve ASS parsing performance, especially for multi-threads
+- Fix bug: avoid identical name of subfonts
+
+
+Overview of changes leading to v0.5.2
+Tuesday, August 15, 2023
+====================================
+- use cpp-httplib to fetch latest version instead of libcurl
+- fix hidpi-scale bug in Linux
+- turn off dark mode in MacOS
+- add fcitx and ibus support
+- new feature: save GUI state when exit
+- fix bug: only show one missing codepoint
+
+
+Overview of changes leading to v0.5.1
+Sunday, July 30, 2023
+====================================
+- use native font render instead of freetype on Windows
+- fix "check version" window freeze bug
+- use libcurl to fetch latest version instead of QNetwork
+- fix some security vulnerabilities
+
+
+Overview of changes leading to v0.5.0
+Friday, July 28, 2023
+====================================
+- new GUI-Toolkit: Qt5
+
+
+Overview of changes leading to v0.4.1
+Monday, June 5, 2023
+====================================
+- Fix bug: mkvtoolnix cannot recognize renamed ASS files
+- Add feature: new version detect
+- Add macOS support
+
+
+Overview of changes leading to v0.4.0
+Friday, June 2, 2023
+====================================
+- Add new feature: "Subfonts rename"
+- Fix bug: xysubfilter can't render vertical ellipsis
+- Set new default branch: imgui
+
+
+Overview of changes leading to v0.3.8
+Monday, April 17, 2023
+====================================
+- Fix Windows memory leak
+
+
+Overview of changes leading to v0.3.6 and v0.3.7
+Saturday, April 8, 2023
+====================================
+- Incremental update for font database
+- Fix font parsing bug
+- Fix ass parsing bugs
+
+
+Overview of changes leading to v0.3.5
+Monday, March 27, 2023
+====================================
+- Reduce the size of subset fonts
+
+
+Overview of changes leading to v0.3.4
+Sunday, March 26, 2023
+====================================
+- Reduce the message level from ERROR to WARNING when "Style"
+  is not found
+- Fix AssParser out of boundry bug
+- Fix bug: xysubfilter will fallback fullwidth characters
+
+
+Overview of changes leading to v0.3.3
+Monday, February 20, 2023
+====================================
+- Fix exception handling bugs
+- Add GUI help text
+
+
+Overview of changes leading to v0.3.2
+Wednesday, January 25, 2023
+====================================
+- Fix GUI bugs
+- Add multi-inputs for CLI program
+- Decrease memory leaking possibility
+
+
+Overview of changes leading to v0.3.1
+Sunday, January 8, 2023
+====================================
+- Rewrite GUI Layout
+- Fix multi-input bug
+
+
+Overview of changes leading to v0.3.0
+Thursday, January 5, 2023
+====================================
+- Fix ass parsing bugs
+- Replace serialization library from "Boost.serialization"
+  to "nlohmann_json". Now font library is saved in "fonts.json"
+  instead of "fonts.db"
+- Replace filesystem library from "Boost.filesystem" to
+  "std::filesystem" (Use C++17 feature)
+- Add new feature "asshdr". It can recolorize the subtitle in
+  order to fit HDR contents
+- GUI colored logs
+
+
+Overview of changes leading to v0.2.7
+Thursday, December 29, 2022
+====================================
+- Fix some GUI layout bugs
+- Replace C++ package manager from "vcpkg" to "conan"
+
+
+Overview of changes leading to v0.2.6
+Monday, December 19, 2022
+====================================
+- Support old SSA subtitle
+- Enhance the performance
+
+
+Overview of changes leading to v0.2.5
+Sunday, December 18, 2022
+====================================
+- Implement locale string recoder based on libiconv to replace 
+  Boost.locale
+- Add new feature: file encoding detection to handle
+  non-UTF8 files
+- Fix ASS parsing bugs
+- GUI can accpet multiple input files now
+
+
+Overview of changes leading to v0.2.4
+Thursday, December 15, 2022
+====================================
+- Implement thread pool by our own
+- Fix bugs of "Clean Fonts" function
+- Add error handling of font files searching
+
+
+Overview of changes leading to v0.2.3
+Thursday, December 8, 2022
+====================================
+- Add Unicode support for Command Line
+- Change command line parser from "CLI11" 
+  to "Boost::program_options"
+
+
+Overview of changes leading to v0.2.2 and v0.2.1
+Wednesday, December 7, 2022
+====================================
+- Use wchar_t in Windows, add Unicode filesystem support for GUI
+- Add Linux release version
+
+
+Overview of changes leading to v0.2.0
+Sunday, December 4, 2022
+====================================
+- Add GUI version
+- Rewrite error handling mechanism
+- fix ass parsing bugs
+
+
+Overview of changes leading to v0.1.4
+Tuesday, November 29, 2022
+====================================
+- Add multithreading support for parsing fonts
+- When parsing fonts, change logger to asynchronous mode
+- Adjust solution structure
+
+
+Overview of changes leading to v0.1.3
+Sunday, November 27, 2022
+====================================
+- Add ASS style override code (\r) support
+- Add "Default" style support
+- Optimize error handling mechanism
+
+
+Overview of changes leading to v0.1.2
+Sunday, November 27, 2022
+====================================
+- Add "Bold" and "Italic" support
+  AssParser can parse "bold" and "italic" info correctly,
+  FontParser can record "slant" and "weight" value,
+  FontSubsetter now can select correct fonts from database based on its "bold"
+  and "italic" information
+- Fix some ass parsing bugs
+- Add missing codepoints check
+
+
+Overview of changes leading to v0.1.1
+Saturday, November 26, 2022
+====================================
+- Change command line option -n,--no-subset to -e,--embed-only
+  But its function has no change
+- Add INFO loggings about creating new folder and new files
+- Add new feature "CleanFonts"
+  When detected [Fonts] in input file, create non-fonts version "xxx.cleaned.ass"
+- Change new file's suffix name: xxx_assfonts.ass --> xxx.assfonts.ass
+- Add version info in help
+- Change logging level of "missing fonts" from ERROR to WARN
+  Print all missing fonts first and then throw an ERROR
+
+
+TOverview of changes leading to v0.1.0
+Friday, November 25, 2022
+====================================
+- First time upload
+- Release x86-64 Windows executable file
